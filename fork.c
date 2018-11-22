@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
 		}
 		/*parent process*/
 		else{
-			wait();
+			wait(NULL);
 			close(fd_client);
 		}
 	}
