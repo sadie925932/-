@@ -97,7 +97,10 @@ int main(int argc, char *argv[])
 			exit(0);
 		}
 		/*parent process*/
-		close(fd_client);
+		else{
+			wait();
+			close(fd_client);
+		}
 	}
 
 	return 0;
