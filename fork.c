@@ -97,10 +97,10 @@ int main(int argc, char *argv[])
 			exit(0);
 		}
 		/*parent process*/
-		else{
-			wait(NULL);
-			close(fd_client);
-		}
+		
+		wait(NULL);
+		close(fd_client);
+		
 	}
 
 	return 0;
